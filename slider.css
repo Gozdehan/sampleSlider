@@ -11,7 +11,8 @@
 	/* start commented backslash hack \*/
 	* html .clearfix { height: 1%; }
 	.clearfix { display: block; }
-h2{
+
+.title h2{
 	color: white;
 	text-align: center;
 	padding-top: 8px;
@@ -30,6 +31,7 @@ h2{
    height: 355px;
    background-color: grey;
 }
+
 .title{
 	float: left;
 	height: 355px;
@@ -46,6 +48,11 @@ h2{
 	width: 512px;
 	background-color: lightblue;
 }
+.image img{
+    float: left;
+	height: 100%;
+	width: 100%;
+}
 .slider-bottom-container{
 	position: relative;
 	top: 355px;
@@ -58,4 +65,16 @@ h2{
 	width: 10000px;
 	height: 160px;
 	background-color: red;
+}
+.bottom-pic{
+	float: left;
+	height: 160px;
+	width: 203px;
+	border-right: 1px solid white;
+}
+.bottom-pic img{
+	float: left;
+	height: 100%;
+	width: 100%;
+	border-top: 1px solid white;	
 }
