@@ -1,0 +1,61 @@
+*{margin: 0; padding: 0; list-style: none; font-family: 'Roboto', sans-serif;}
+.clearfix:after {
+	     visibility: hidden;
+	     display: block;
+	     font-size: 0;
+	     content: " ";
+	     clear: both;
+	     height: 0;
+	     }
+	.clearfix { display: inline-block; }
+	/* start commented backslash hack \*/
+	* html .clearfix { height: 1%; }
+	.clearfix { display: block; }
+h2{
+	color: white;
+	text-align: center;
+	padding-top: 8px;
+}
+.slider-container{
+	position: relative;
+	height: 515px;
+	width: 812px;
+	background-color: pink;
+	overflow: hidden;
+}
+
+.slider-top{
+   position: absolute;
+   width: 10000px;
+   height: 355px;
+   background-color: grey;
+}
+.title{
+	float: left;
+	height: 355px;
+	width: 300px;
+}
+.description{
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+.image{
+	float: left;
+	height: 355px;
+	width: 512px;
+	background-color: lightblue;
+}
+.slider-bottom-container{
+	position: relative;
+	top: 355px;
+	height: 160px;
+	width: 812px;
+	background-color: black;
+}
+.slider-bottom{
+	position: absolute;
+	width: 10000px;
+	height: 160px;
+	background-color: red;
+}
