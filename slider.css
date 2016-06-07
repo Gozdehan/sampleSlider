@@ -21,15 +21,14 @@
 	position: relative;
 	height: 515px;
 	width: 812px;
-	background-color: pink;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .slider-top{
    position: absolute;
    width: 10000px;
    height: 355px;
-   background-color: grey;
+   background-color: black;
 }
 
 .title{
@@ -41,12 +40,12 @@
 	font-size: 20px;
 	margin-top: 10px;
 	text-align: center;
+	color: white;
 }
 .image{
 	float: left;
 	height: 355px;
 	width: 512px;
-	background-color: lightblue;
 }
 .image img{
     float: left;
@@ -58,7 +57,6 @@
 	top: 355px;
 	height: 160px;
 	width: 812px;
-	background-color: black;
 }
 .slider-bottom{
 	position: absolute;
@@ -69,12 +67,62 @@
 .bottom-pic{
 	float: left;
 	height: 160px;
-	width: 203px;
-	border-right: 1px solid white;
+	width: 200px;
+	border-right: 4px solid white;
+	cursor: hand;
 }
 .bottom-pic img{
 	float: left;
 	height: 100%;
 	width: 100%;
-	border-top: 1px solid white;	
+	border-top: 4px solid white;	
+}
+/*.bottom-pic:hover img{
+	width: 110%;
+	height: 110%;
+	margin-right: 4px;
+}*/
+.left-control{
+	position: absolute;
+	margin-top: 4px;
+	z-index: 6;
+	height: 156px;
+	width: 54px;
+}
+.right-control{
+	position: absolute;
+	z-index: 6;
+	left: 758px;
+	margin-top: 4px;
+	height: 156px;
+	width: 54px;
+}
+.left-control .fa, .right-control .fa {
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 58px;
+	margin-left: 17px;
+}
+.controlArea{
+	height: 100%;
+	width: 100%;
+}
+.left-control:hover, .right-control:hover .controlArea{
+	background-color: rgba(255, 255, 255, 0.47);
+}
+.bottom-caption{
+	position: absolute;
+	width: 200px;
+	height: 55px;
+	bottom: -4px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	text-align: center;
+}
+ .bottom-pic:hover .bottom-caption{
+	background-color: white;
+	opacity: 0.7;
+	color: black;
+	font-weight: bold;
 }
